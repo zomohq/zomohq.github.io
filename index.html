@@ -35,8 +35,32 @@
 			.caption {
 				margin: 0;
 				text-align: center;
-				font-size: 1.05rem;
+				font-size: 1.8rem;
 				opacity: 0.95;
+			}
+			.button-row {
+				display: flex;
+				gap: 1.2rem;
+				margin-top: 1.2rem;
+				justify-content: center;
+			}
+			.link-btn {
+				background: #fff;
+				color: #000;
+				border: none;
+				border-radius: 999px;
+				padding: 0.7em 2em;
+				font-size: 1rem;
+				font-family: inherit;
+				text-decoration: none;
+				font-weight: 500;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+				transition: background 0.2s, color 0.2s;
+				cursor: pointer;
+			}
+			.link-btn:hover, .link-btn:focus {
+				background: #eee;
+				color: #111;
 			}
 		</style>
 	</head>
@@ -44,11 +68,14 @@
 		<div class="center-block">
 			<img
             src="zomo.png",
-            width="170",
-            height="72"
+            width="341",
+            height="144"
 			/>
 
 			<h3 class="caption">Work in progress...</h3>
+			<div class="button-row">
+				<a href="/one" class="link-btn">qylOS beta signup</a>
+			</div>
 		</div>
 	</body>
 </html>
