@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>qylOS beta signup</title>
+		<style>
+			html, body { height: 100%; }
+			body {
+				margin: 0;
+				background: #000;
+				color: #fff;
+				font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			/* The block containing the image and the caption. */
+			.center-block {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+				padding: 2vmin;
+				width: 100%;
+				max-width: 680px;
+				box-sizing: border-box;
+			}
+
+			/* Image styling — responsive and visually pleasant */
+			.center-block img {
+				display: block;
+				width: 341px;
+				height: 144px;
+				object-fit: contain;
+				border-radius: 8px;
+				box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+			}
+
+			.caption {
+				margin: 0;
+				text-align: center;
+				font-size: 1.05rem;
+				opacity: 0.95;
+			}
+
+			/* Signup form */
+			.signup {
+				display: flex;
+				gap: 0.75rem;
+				margin-top: 0.5rem;
+				align-items: center;
+			}
+
+			.email {
+				background: #111;
+				color: #ddd;
+				border: 1px solid #222;
+				padding: 0.6rem 0.9rem;
+				border-radius: 999px;
+				outline: none;
+				min-width: 220px;
+				font-size: 0.95rem;
+			}
+
+			.email::placeholder { color: #666; }
+
+			.btn {
+				background: #666;
+				color: #fff;
+				border: none;
+				padding: 0.62rem 1rem;
+				border-radius: 999px;
+				font-size: 0.95rem;
+				box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+				cursor: not-allowed;
+				opacity: 0.7;
+			}
+
+			.email:disabled,
+			.btn:disabled {
+				background: #111;
+				color: #777;
+				border-color: #222;
+			}
+
+			.note {
+				margin-top: 0.6rem;
+				font-size: 0.9rem;
+				color: #9aa0a6;
+				opacity: 0.95;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center-block">
+			<img src="qyl.png" width="341" height="144" alt="qylOS logo" />
+
+			<h2 class="caption">join the qyl beta</h2>
+			<p class="note">sign up and beta test qylOS Tea Party</p>
+
+			<div class="signup" aria-hidden="false">
+				<input class="email" type="email" placeholder="johnsmith@geemail.com" disabled aria-disabled="true" />
+				<button class="btn" disabled aria-disabled="true">join beta</button>
+			</div>
+						<p class="note">beta opens january 2026.</p>
+
+
+			<br><br><p class="note">disclaimer: you will probably experience a LOT of bugs. this is for testing, not the full release.</p>
+		</div>
+	</body>
+</html>

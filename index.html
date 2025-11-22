@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>zomo</title>
+		<style>
+			html, body { height: 100%; }
+			body {
+				margin: 0;
+				background: #000;
+				color: #fff;
+				font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			/* The block containing the image and the caption. */
+			.center-block {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+				padding: 2vmin;
+			}
+
+			/* Image styling — responsive and visually pleasant */
+			.center-block img {
+				display: block;
+				border-radius: 12px;
+				box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+			}
+
+			.caption {
+				margin: 0;
+				text-align: center;
+				font-size: 1.05rem;
+				opacity: 0.95;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center-block">
+			<img
+            src="zomo.png",
+            width="170",
+            height="72"
+			/>
+
+			<h3 class="caption">Work in progress...</h3>
+		</div>
+	</body>
+</html>
+
